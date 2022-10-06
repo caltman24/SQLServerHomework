@@ -8,7 +8,7 @@ namespace DataAccessLibrary.Models;
 
 public class EmployerModel
 {
-    public int Id { get; set; }
+    public int Id { get; }
     public string? EmployerName { get; set; }
 }
 
