@@ -9,7 +9,7 @@ using Dapper;
 
 namespace DataAccessLibrary;
 
-internal class SQLServerDataAccess
+internal class SQLServerDataAccess : ISQLServerDataAccess
 {
     public List<T> LoadData<T, U>(string sqlStatement, U parameters, string connectionString)
     {
@@ -17,7 +17,7 @@ internal class SQLServerDataAccess
         {
             List<T> rows = connection.Query<T>(sqlStatement, parameters).ToList();
             return rows;
-        }  
+        }
     }
 
     public void SaveData<T>(string sqlStatement, T parameters, string connectionString)

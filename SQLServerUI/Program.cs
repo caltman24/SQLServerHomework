@@ -3,18 +3,16 @@ using DataAccessLibrary;
 using DataAccessLibrary.Models;
 
 var config = Configure();
-SQLCrud dataAccess = new(GetConnectionString(config));
 
-
+ISQLCrud dataAccess = new SQLCrud(GetConnectionString(config));
 
 ReadAllPeople(dataAccess);
 
 Console.WriteLine();
-
 ReadPersonById(dataAccess, 1);
+Console.WriteLine();
 
-// TODO: Implement CreatePerson crud method
-PersonModel personToAdd = new()
+PersonModel christian = new()
 {
     FirstName = "Christian",
     LastName = "Avery",
@@ -30,13 +28,19 @@ PersonModel personToAdd = new()
     }
 };
 
-dataAccess.CreatePerson(personToAdd);
 
-
+AddPersonToDb(dataAccess, christian);
 
 Console.ReadLine();
 
-static void ReadPersonById(SQLCrud dataAccess, int id)
+
+static void AddPersonToDb(ISQLCrud dataAccess, PersonModel personToAdd)
+{
+    dataAccess.CreatePerson(personToAdd);
+    Console.WriteLine($"{personToAdd.FirstName} {personToAdd.LastName} added to database");
+}
+
+static void ReadPersonById(ISQLCrud dataAccess, int id)
 {
     var person = dataAccess.GetPersonById(id);
 
@@ -56,7 +60,7 @@ static void ReadPersonById(SQLCrud dataAccess, int id)
     }
 }
 
-static void ReadAllPeople(SQLCrud dataAccess)
+static void ReadAllPeople(ISQLCrud dataAccess)
 {
     var listOfPeople = dataAccess.GetAllPeople();
 
