@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLServerUI", "SQLServerUI\
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SQLServerHomework", "SQLServerHomework\SQLServerHomework.sqlproj", "{78644EF6-C64C-4C36-92CC-4803BE429739}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLibrary", "DataAccessLibrary\DataAccessLibrary.csproj", "{8CE705B0-F7DC-44E9-AD68-F761C134D35B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLibrary", "DataAccessLibrary\DataAccessLibrary.csproj", "{8CE705B0-F7DC-44E9-AD68-F761C134D35B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteUI", "SQLiteUI\SQLiteUI.csproj", "{B88AEC96-0A0E-4307-883C-8468B81D1CEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{8CE705B0-F7DC-44E9-AD68-F761C134D35B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CE705B0-F7DC-44E9-AD68-F761C134D35B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CE705B0-F7DC-44E9-AD68-F761C134D35B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88AEC96-0A0E-4307-883C-8468B81D1CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88AEC96-0A0E-4307-883C-8468B81D1CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88AEC96-0A0E-4307-883C-8468B81D1CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88AEC96-0A0E-4307-883C-8468B81D1CEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

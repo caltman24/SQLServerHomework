@@ -9,7 +9,7 @@ using Dapper;
 
 namespace DataAccessLibrary;
 
-internal class SQLServerDataAccess : ISQLServerDataAccess
+internal class SQLServerDataAccess : ISQLDataAccess
 {
     public List<T> LoadData<T, U>(string sqlStatement, U parameters, string connectionString)
     {

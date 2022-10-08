@@ -10,7 +10,7 @@ namespace DataAccessLibrary;
 public class SQLCrud : ISQLCrud
 {
 	private readonly string _connectionString;
-	private readonly ISQLServerDataAccess _db = new SQLServerDataAccess();
+	private readonly ISQLDataAccess _db = new SQLServerDataAccess();
 	public SQLCrud(string connectionString)
 	{
 		_connectionString = connectionString;
