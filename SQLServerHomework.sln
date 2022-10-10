@@ -9,7 +9,9 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SQLServerHomework", "SQLSer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLibrary", "DataAccessLibrary\DataAccessLibrary.csproj", "{8CE705B0-F7DC-44E9-AD68-F761C134D35B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteUI", "SQLiteUI\SQLiteUI.csproj", "{B88AEC96-0A0E-4307-883C-8468B81D1CEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLiteUI", "SQLiteUI\SQLiteUI.csproj", "{B88AEC96-0A0E-4307-883C-8468B81D1CEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQLUI", "MySQLUI\MySQLUI.csproj", "{CE946AB3-FD20-4433-8872-AF780B3E8A87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{B88AEC96-0A0E-4307-883C-8468B81D1CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B88AEC96-0A0E-4307-883C-8468B81D1CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B88AEC96-0A0E-4307-883C-8468B81D1CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE946AB3-FD20-4433-8872-AF780B3E8A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE946AB3-FD20-4433-8872-AF780B3E8A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE946AB3-FD20-4433-8872-AF780B3E8A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE946AB3-FD20-4433-8872-AF780B3E8A87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

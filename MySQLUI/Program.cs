@@ -9,7 +9,7 @@ ISQLCrud dataAccess = new MySQLCrud(GetConnectionString(config));
 ReadAllPeople(dataAccess);
 
 Console.WriteLine();
-ReadPersonById(dataAccess, 1);
+ReadPersonById(dataAccess, 2);
 Console.WriteLine();
 
 PersonModel christian = new()
